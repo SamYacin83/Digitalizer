@@ -2541,6 +2541,80 @@ section {
   }
 }
 
+/* Technologies Section */
+.technologies {
+  padding: 60px 0;
+  background: #f6f9ff;
+}
+
+.technologies .tech-item {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.technologies .tech-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.technologies .tech-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.technologies .tech-item h4 {
+  font-size: 20px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+}
+
+.technologies .section-header {
+  margin-bottom: 40px;
+}
+
+.technologies .section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.technologies .section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.technologies .tech-item i {
+  font-size: 48px;
+  color: #4154f1;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.technologies .tech-item:hover i {
+  transform: scale(1.1);
+  color: #2e3fdb;
+}
+
 /* Service Hero Section */
 .service-hero {
   padding: 120px 0;
@@ -2627,7 +2701,7 @@ section {
   font-size: 24px;
   color: #012970;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 .feature-box p {
@@ -2847,7 +2921,7 @@ section {
   font-size: 1.4rem;
   color: #012970;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 .feature-box p {
