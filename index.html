@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Digitalizer Inc.</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Digitalizer Inc. | Solutions Numériques Professionnelles</title>
+  <meta content="Digitalizer Inc. - Expert en développement web, mobile et solutions digitales sur mesure. Transformez votre entreprise avec nos services numériques professionnels." name="description">
+  <meta content="développement web, applications mobiles, solutions digitales, transformation numérique, cloud computing, commerce électronique" name="keywords">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Digitalizer Inc. | Solutions Numériques Professionnelles">
+  <meta property="og:description" content="Expert en développement web, mobile et solutions digitales sur mesure. Transformez votre entreprise avec nos services numériques professionnels.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:url" content="https://www.digitalizer.com">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicons -->
   <link href="assets/img/logoIcone.jpg" rel="icon">
@@ -29,42 +36,39 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logo.png" alt="Digitalizer Logo">
         <span>Digitalizer</span>
       </a>
 
       <nav id="navbar" class="navbar">
-          <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-              <li><a class="nav-link scrollto" href="#services">Nos services</a></li>
-              <li><a class="nav-link scrollto" href="#about">À propos</a></li>
-              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-              <li><a class="getstarted scrollto" href="#contact" style=" display: none;">J'ai un projet</a></li>
-          </ul>
+        <ul>
+          <li><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#portfolio">Réalisations</a></li>
+          <li><a class="nav-link" href="#about">À propos</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="getstarted" href="#contact">Démarrer un projet</a></li>
+        </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
-
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Propulsez votre entreprise avec nos solutions logicielles sur mesure.</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Nous combinons expertise et créativité pour développer des sites web et des solutions adaptées à vos besoins uniques, vous aidant à atteindre vos objectifs.</h2>
+          <h1 data-aos="fade-up">Solutions Digitales Innovantes</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Transformez votre entreprise avec nos solutions numériques sur mesure</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="a-propos.html" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>En savoir plus</span>
+              <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Commencer</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -75,25 +79,61 @@
         </div>
       </div>
     </div>
-
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h2>Nos Services</h2>
+          <p>Solutions Digitales Complètes</p>
+        </header>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="bi bi-window-desktop icon"></i>
+              <h3>Développement Web</h3>
+              <p>Sites web professionnels et applications web sur mesure pour votre entreprise.</p>
+              <a href="dev-web.html" class="read-more"><span>En savoir plus</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="bi bi-phone icon"></i>
+              <h3>Développement Mobile</h3>
+              <p>Applications mobiles innovantes pour iOS et Android.</p>
+              <a href="dev-mobile.html" class="read-more"><span>En savoir plus</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="bi bi-gear icon"></i>
+              <h3>Développement Logiciel</h3>
+              <p>Solutions logicielles personnalisées pour optimiser vos processus.</p>
+              <a href="dev-logiciel.html" class="read-more"><span>En savoir plus</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-
       <div class="container" data-aos="fade-up">
         <div class="row gx-0">
-
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-              <h3>QUI SOMMES-NOUS</h3>
-              <h2>Optimisez l’activité de votre entreprise avec une application métier sur-mesure développée par Digitalizer Inc.</h2>
+              <h3>Qui Sommes-Nous</h3>
+              <h2>Votre Partenaire Digital de Confiance</h2>
               <p>
-                Chez Digitalizer Inc., nous croyons que disposer des bons outils est essentiel pour gérer votre activité de manière efficace. C’est pourquoi nous développons des applications sur-mesure, adaptées à votre mode de travail et à votre budget.
+                Chez Digitalizer, nous sommes passionnés par la création de solutions numériques innovantes qui transforment les entreprises. Notre expertise technique combinée à notre approche centrée sur le client nous permet de délivrer des solutions qui dépassent les attentes.
               </p>
               <div class="text-center text-lg-start">
-                <a href="a-propos.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <a href="#contact" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>En savoir plus</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -102,192 +142,76 @@
           </div>
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img_1.png" class="img-fluid" alt="">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-
         </div>
       </div>
-
-    </section><!-- End About Section -->
-
-    <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-            <h2>NOS VALEURS</h2>
-            <p>Nous créons des solutions logicielles innovantes et personnalisées, axées sur la qualité et la satisfaction client</p>
-        </header>
-
-        <div class="row">
-
-            <div class="col-lg-4" data-aos="fade-up" style="margin-bottom: 20px;" data-aos-delay="200">
-                <div class="box" >
-                    <img src="assets/img/values-1.png" class="img-fluid" alt="">
-                    <h3>Innovation</h3>
-                    <p style="text-align: justify;">Chez Digitalizer Inc., nous nous engageons à être à la pointe de la technologie. Nous adoptons les dernières innovations pour offrir à nos clients des solutions logicielles modernes et efficaces.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" style="margin-bottom: 20px;" data-aos-delay="400">
-                <div class="box" >
-                    <img src="assets/img/values-2.png" class="img-fluid" alt="">
-                    <h3>Qualité</h3>
-                    <p style="text-align: justify;">Nous croyons en la production de logiciels de la plus haute qualité. Chaque projet est soumis à des tests rigoureux pour garantir des performances optimales et une fiabilité sans faille.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" style="margin-bottom: 20px;" data-aos-delay="600">
-                <div class="box" >
-                    <img src="assets/img/values-3.png" class="img-fluid" alt="">
-                    <h3>Personnalisation</h3>
-                    <p style="text-align: justify;">Chaque client est unique, et nous nous efforçons de créer des solutions sur mesure qui répondent spécifiquement à leurs besoins et à leurs objectifs. Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs défis et y apporter des solutions adaptées.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="800">
-                <div class="box">
-                    <img src="assets/img/features.png" class="img-fluid" alt="">
-                    <h3>Transparence / Collaboration</h3>
-                    <p style="text-align: justify;">La transparence et la collaboration sont au cœur de nos interactions. Nous maintenons une communication ouverte et honnête avec nos clients tout au long du processus de développement, en fournissant des mises à jour régulières et en assurant une totale visibilité sur l'avancement des projets. Nous valorisons également le travail d'équipe et la collaboration, en combinant nos compétences et nos connaissances pour créer des solutions plus robustes et créatives pour nos clients.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="800">
-                <div class="box" >
-                    <img src="assets/img/values-3.png" class="img-fluid" alt="">
-                    <h3>Excellence</h3>
-                    <p  style="text-align: justify;">Nous visons l'excellence dans tout ce que nous faisons. Nos équipes d'experts sont dédiées à la création de logiciels qui non seulement répondent, mais dépassent les attentes de nos clients.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="800">
-                <div class="box">
-                    <img src="assets/img/satisfaction-1.jpg" class="img-fluid" alt="">
-                    <h3>Satisfaction client</h3>
-                    <p style="text-align: justify;">La satisfaction de nos clients est notre priorité absolue. Nous nous engageons à fournir un service client exceptionnel et à nous assurer que nos solutions apportent une réelle valeur ajoutée à leurs activités.</p>
-                </div>
-            </div>
-        </div>
-
-      </div>
-
-    </section><!-- End Values Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>NOS SERVICES</h2>
-          <p>Une gamme complète de services pour répondre à tous vos besoins en matière de technologie et de développement.</p>
-        </header>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Développement Web</h3>
-              <p>Chez Digitalizer Inc., nous créons bien plus que de simples sites web. Nous élaborons des expériences digitales personnalisées, propulsant votre réussite en ligne.</p>
-              <a href="dev-web.html" class="read-more"><span>Pour en savoir plus </span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-command-line icon"></i>
-              <h3>Développement de logiciels</h3>
-              <p>Des solutions sur mesure pour vos défis les plus ambitieux.</p>
-              <a href="dev-logiciel.html" class="read-more"><span>Pour en savoir plus </span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Développement d’applications mobiles</h3>
-              <p>Digitalizer Inc. transforme vos idées en applications mobiles intuitives et performantes, conçues pour engager vos utilisateurs et renforcer votre présence sur mobile.</p>
-              <a href="dev-mobile.html" class="read-more"><span>Pour en savoir plus </span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500" style=" display: none;">
-            <div class="service-box red">
-              <i class="ri-magic-line icon"></i>
-              <h3>Commerce électronique</h3>
-              <p>Boostez vos ventes en ligne avec nos solutions de commerce électronique personnalisées, offrant une expérience utilisateur exceptionnelle et des fonctionnalités robustes pour votre boutique en ligne.</p>
-              <a href="commerce-electronique.html" class="read-more"><span>Pour en savoir plus </span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600" style=" display: none;">
-            <div class="service-box purple">
-              <i class="ri-radar-line icon"></i>
-              <h3>Infonuagique</h3>
-              <p>Optimisez vos opérations avec nos services infonuagiques, offrant flexibilité, sécurité et évolutivité pour soutenir votre croissance numérique.</p>
-              <a href="infonuagique.html" class="read-more"><span>Pour en savoir plus </span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700" style=" display: none;">
-            <div class="service-box pink">
-              <i class="ri-stack-line icon"></i>
-              <h3>Produits informatiques </h3>
-              <p>Chez Digitalizer Inc., nous fournissons des produits informatiques innovants et fiables, conçus pour améliorer votre infrastructure technologique et optimiser vos performances.</p>
-              <a href="produit-informatique.html" class="read-more"><span>Pour en savoir plus </span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-
-    </section><!-- End Services Section -->
+    </section>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Contact</h2>
+          <p>Contactez-Nous</p>
         </header>
 
         <div class="row gy-4">
-
           <div class="col-lg-6">
-
             <div class="row gy-4">
               <div class="col-md-6">
                 <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Envoyez-nous un email</h3>
-                  <p>contact@digitalizer.ca</p>
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Adresse</h3>
+                  <p>123 Rue du Commerce<br>Paris, 75000</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i class="bi bi-clock"></i>
-                  <h3>Heures d'ouverture</h3>
-                  <p>Lundi - Vendredi<br>9h00 - 17h00</p>
+                  <i class="bi bi-telephone"></i>
+                  <h3>Appelez-nous</h3>
+                  <p>+33 1 23 45 67 89</p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>contact@digitalizer.com</p>
                 </div>
               </div>
             </div>
-
           </div>
 
           <div class="col-lg-6">
-              <iframe src="https://www.cognitoforms.com/f/AREFZzQor0KfaKZ2Ly6sUg/1" style="border:0;width:100%;" height="599"></iframe>
-              <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Votre Nom" required>
+                </div>
 
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Votre Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Sujet" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit">Envoyer le Message</button>
+                </div>
+              </div>
+            </form>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
+    </section>
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -296,58 +220,59 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
+              <img src="assets/img/logo.png" alt="Digitalizer Logo">
               <span>Digitalizer</span>
             </a>
-            <p>Connectez vous votre savoir faire au monde.</p>
-            <div class="social-links mt-3" style=" display: none;">
+            <p>Votre partenaire de confiance pour tous vos projets digitaux.</p>
+            <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-              <h4>LIENS UTILES</h4>
+            <h4>Liens Utiles</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Accueil</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services">Nos services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Accueil</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#about">À propos</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Conditions d'utilisation</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Politique de confidentialité</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-              <h4>Nos services</h4>
+            <h4>Nos Services</h4>
             <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="dev-web.html">Développement Web</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="dev-logiciel.html">Développement de logiciels</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="dev-mobile.html">Développement des applications mobiles</a></li>
-                <li style=" display: none;"><i class="bi bi-chevron-right"></i> <a href="#">Commerce électronique</a></li>
-                <li style=" display: none;"><i class="bi bi-chevron-right"></i> <a href="#">Infonuagique</a></li>
-                <li style=" display: none;"><i class="bi bi-chevron-right"></i> <a href="#">Produits informatiques</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="dev-web.html">Développement Web</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="dev-mobile.html">Développement Mobile</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="dev-logiciel.html">Développement Logiciel</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="commerce-electronique.html">E-commerce</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="infonuagique.html">Cloud Computing</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact</h4>
+            <h4>Contactez-nous</h4>
             <p>
-              <strong>Email:</strong> contact@digitalizer.ca<br>
+              123 Rue du Commerce <br>
+              Paris, 75000<br>
+              France <br><br>
+              <strong>Téléphone:</strong> +33 1 23 45 67 89<br>
+              <strong>Email:</strong> contact@digitalizer.com<br>
             </p>
-
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="container">
-        <div class="copyright">
-            Copyright <strong><span>&copy; 2024 Digitalizer Inc</span></strong>. Tous droits réservés
-        </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Digitalizer</span></strong>. Tous droits réservés
+      </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -362,7 +287,5 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
