@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>À Propos - Xeer Ciise | Patrimoine Culturel Somali-Issa</title>
+  <meta name="description" content="Découvrez l'histoire et la mission du projet Xeer Ciise, dédié à la préservation du droit coutumier oral des communautés somali-issa">
+  <meta name="keywords" content="xeer ciise, droit coutumier, somali, issa, patrimoine culturel, tradition orale">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #8B4513;
+      --secondary-color: #D2691E;
+      --accent-color: #CD853F;
+      --gold-color: #DAA520;
+      --text-dark: #2C1810;
+      --text-light: #6B4423;
+      --bg-light: #FDF6E3;
+      --bg-cream: #FAF0E6;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+    }
+
+    /* Header Styles */
+    .header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      padding: 0;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(139, 69, 19, 0.3);
+    }
+
+    .header-top {
+      background: rgba(44, 24, 16, 0.9);
+      padding: 8px 0;
+      font-size: 0.85rem;
+      color: var(--white);
+    }
+
+    .header-main {
+      padding: 15px 0;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--gold-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+    }
+
+    .logo-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .logo-text .tagline {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 300;
+      margin-top: -5px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-menu a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: var(--gold-color);
+      text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+    }
+
+    .nav-menu a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gold-color);
+      box-shadow: 0 0 10px rgba(218, 165, 32, 0.7);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(210, 105, 30, 0.8)), 
+                  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23D2691E" width="1200" height="600"/><path fill="%238B4513" d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero-content .subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .breadcrumb-custom {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .breadcrumb-custom a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--gold-color);
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Mission Cards */
+    .mission-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 60px 0;
+    }
+
+    .mission-card {
+      background: var(--white);
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mission-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(139, 69, 19, 0.2);
+    }
+
+    .mission-card .icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    .mission-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .mission-card p {
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* Stats Section */
+    .stats-section {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 60px 0;
+      margin: 80px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--gold-color);
+    }
+
+    .stat-item p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Timeline Section */
+    .timeline-section {
+      padding: 80px 0;
+      background: var(--bg-cream);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      height: 100%;
+      background: var(--gold-color);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .timeline-item:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .timeline-content {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+      width: calc(50% - 40px);
+      position: relative;
+    }
+
+    .timeline-date {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold-color);
+      color: var(--white);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      z-index: 2;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--text-dark);
+      color: var(--white);
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold-color);
+      margin-bottom: 20px;
+    }
+
+    .footer-section a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: var(--gold-color);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-main {
+        text-align: center;
+      }
+      
+      .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        flex-direction: row !important;
+      }
+
+      .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 40px;
+      }
+
+      .timeline-date {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <i class="fas fa-envelope me-2"></i> contact@xeerciise.org
+          </div>
+          <div class="col-md-6 text-end">
+            <i class="fas fa-phone me-2"></i> +253 XX XX XX XX
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-main">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="logo-section">
+              <div class="logo-icon">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div class="logo-text">
+                <h1>XEER CIISE</h1>
+                <div class="tagline">Patrimoine Juridique Somali-Issa</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="nav-menu justify-content-end">
+              <a href="index.html">Accueil</a>
+              <a href="about.html" class="active">À Propos</a>
+              <a href="traditions.html">Traditions</a>
+              <a href="news.html">Actualités</a>
+              <a href="galerie.html">Galerie</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>À Propos du Xeer Ciise</h1>
+        <p class="subtitle">Préservation et transmission du droit coutumier oral des communautés somali-issa</p>
+        <div class="breadcrumb-custom">
+          <a href="index.html">Accueil</a> / <span>À Propos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Introduction Section -->
+      <section class="section-header">
+        <h2>Notre Mission</h2>
+        <p>Le projet Xeer Ciise est dédié à la documentation, la préservation et la transmission du riche patrimoine juridique oral des communautés somali-issa présentes en Éthiopie, à Djibouti et en Somalie.</p>
+      </section>
+
+      <!-- Mission Cards -->
+      <div class="mission-cards">
+        <div class="mission-card">
+          <div class="icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3>Documentation</h3>
+          <p>Collecte et documentation systématique des traditions juridiques orales, des proverbes et des pratiques coutumières du Xeer Ciise.</p>
+        </div>
+        
+        <div class="mission-card">
+          <div class="icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Préservation</h3>
+          <p>Sauvegarde du patrimoine juridique ancestral face aux défis de la modernisation et de l'urbanisation croissante.</p>
+        </div>
+        
+        <div class="mission-card">
+          <div class="icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Transmission</h3>
+          <p>Facilitation de la transmission intergénérationnelle des savoirs juridiques traditionnels aux nouvelles générations.</p>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3>1000+</h3>
+              <p>Années de tradition</p>
+            </div>
+            <div class="stat-item">
+              <h3>3</h3>
+              <p>Pays concernés</p>
+            </div>
+            <div class="stat-item">
+              <h3>2M+</h3>
+              <p>Personnes impactées</p>
+            </div>
+            <div class="stat-item">
+              <h3>95%</h3>
+              <p>Taux de résolution</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section class="timeline-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Histoire du Xeer Ciise</h2>
+            <p>Un voyage à travers les siècles de tradition juridique</p>
+          </div>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">Xe siècle</div>
+              <div class="timeline-content">
+                <h4>Origines ancestrales</h4>
+                <p>Émergence des premières formes codifiées du Xeer Ciise dans la région de la Corne de l'Afrique.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-date">XVe siècle</div>
+              <div class="timeline-content">
+                <h4>Consolidation</h4>
+                <p>Structuration et harmonisation des règles coutumières à travers les différentes communautés.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-date">XIXe siècle</div>
+              <div class="timeline-content">
+                <h4>Résistance coloniale</h4>
+                <p>Maintien des traditions juridiques face aux influences coloniales européennes.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h4>Projet de préservation</h4>
+                <p>Lancement de l'initiative de documentation et de préservation numérique du patrimoine.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope me-2"></i> contact@xeerciise.org</p>
+          <p><i class="fas fa-phone me-2"></i> +253 XX XX XX XX</p>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Djibouti, République de Djibouti</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <p><a href="index.html">Accueil</a></p>
+          <p><a href="about.html">À Propos</a></p>
+          <p><a href="traditions.html">Traditions</a></p>
+          <p><a href="news.html">Actualités</a></p>
+          <p><a href="galerie.html">Galerie</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Régions</h3>
+          <p><a href="#">Djibouti</a></p>
+          <p><a href="#">Éthiopie</a></p>
+          <p><a href="#">Somalie</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Partenaires</h3>
+          <p><a href="#">UNESCO</a></p>
+          <p><a href="#">Universités locales</a></p>
+          <p><a href="#">Organisations culturelles</a></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Xeer Ciise. Tous droits réservés. | Préservation du patrimoine culturel somali-issa</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 100) {
+        header.style.boxShadow = '0 4px 30px rgba(139, 69, 19, 0.4)';
+      } else {
+        header.style.boxShadow = '0 4px 20px rgba(139, 69, 19, 0.3)';
+      }
+    });
+  </script>
+</body>
+
+</html>

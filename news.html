@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Actualités - Xeer Ciise | Nouvelles et Événements du Patrimoine Juridique Somali-Issa</title>
+  <meta name="description" content="Découvrez les dernières actualités du projet Xeer Ciise : reconnaissance UNESCO, événements culturels, conférences et publications récentes">
+  <meta name="keywords" content="actualités xeer ciise, unesco, événements culturels, conférences, publications, recherches">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #8B4513;
+      --secondary-color: #D2691E;
+      --accent-color: #CD853F;
+      --gold-color: #DAA520;
+      --text-dark: #2C1810;
+      --text-light: #6B4423;
+      --bg-light: #FDF6E3;
+      --bg-cream: #FAF0E6;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+    }
+
+    /* Header Styles */
+    .header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      padding: 0;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(139, 69, 19, 0.3);
+    }
+
+    .header-top {
+      background: rgba(44, 24, 16, 0.9);
+      padding: 8px 0;
+      font-size: 0.85rem;
+      color: var(--white);
+    }
+
+    .header-main {
+      padding: 15px 0;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--gold-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+    }
+
+    .logo-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .logo-text .tagline {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 300;
+      margin-top: -5px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-menu a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: var(--gold-color);
+      text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+    }
+
+    .nav-menu a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gold-color);
+      box-shadow: 0 0 10px rgba(218, 165, 32, 0.7);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(210, 105, 30, 0.8)), 
+                  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23D2691E" width="1200" height="600"/><path fill="%238B4513" d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero-content .subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .breadcrumb-custom {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .breadcrumb-custom a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--gold-color);
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* News Grid */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .news-card {
+      background: var(--white);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(139, 69, 19, 0.2);
+    }
+
+    .news-card .news-image {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .news-card .news-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .news-date {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: var(--gold-color);
+      color: var(--text-dark);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .news-category {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .news-content {
+      padding: 30px;
+    }
+
+    .news-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .news-content p {
+      color: var(--text-light);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .news-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      border-top: 1px solid rgba(139, 69, 19, 0.1);
+    }
+
+    .news-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .read-more {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .read-more:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Events Section */
+    .events-section {
+      padding: 80px 0;
+      background: var(--bg-cream);
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .event-card {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(139, 69, 19, 0.1);
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(139, 69, 19, 0.2);
+    }
+
+    .event-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    .event-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .event-date {
+      color: var(--gold-color);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .event-card p {
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* Publications Section */
+    .publications-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .publications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .publication-card {
+      background: var(--bg-light);
+      border-radius: 15px;
+      padding: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(139, 69, 19, 0.1);
+    }
+
+    .publication-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(139, 69, 19, 0.2);
+    }
+
+    .publication-type {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .publication-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .publication-authors {
+      color: var(--text-light);
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .publication-card p {
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .publication-link {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .publication-link:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--text-dark);
+      color: var(--white);
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold-color);
+      margin-bottom: 20px;
+    }
+
+    .footer-section a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: var(--gold-color);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-main {
+        text-align: center;
+      }
+      
+      .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .news-grid,
+      .events-grid,
+      .publications-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <i class="fas fa-envelope me-2"></i> contact@xeerciise.org
+          </div>
+          <div class="col-md-6 text-end">
+            <i class="fas fa-phone me-2"></i> +253 XX XX XX XX
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-main">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="logo-section">
+              <div class="logo-icon">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div class="logo-text">
+                <h1>XEER CIISE</h1>
+                <div class="tagline">Patrimoine Juridique Somali-Issa</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="nav-menu justify-content-end">
+              <a href="index.html">Accueil</a>
+              <a href="about.html">À Propos</a>
+              <a href="traditions.html">Traditions</a>
+              <a href="news.html" class="active">Actualités</a>
+              <a href="galerie.html">Galerie</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Actualités du Xeer Ciise</h1>
+        <p class="subtitle">Suivez les dernières nouvelles, événements et publications sur le patrimoine juridique somali-issa</p>
+        <div class="breadcrumb-custom">
+          <a href="index.html">Accueil</a> / <span>Actualités</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- UNESCO Recognition Section -->
+      <section class="section-header" data-aos="fade-up">
+        <h2>Reconnaissance UNESCO</h2>
+        <p>Les dernières nouvelles concernant la reconnaissance internationale du Xeer Ciise</p>
+      </section>
+
+      <div class="news-grid">
+        <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="news-image">
+            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%23D2691E' width='400' height='250'/><text x='200' y='125' text-anchor='middle' fill='white' font-size='16'>UNESCO Recognition</text></svg>" alt="UNESCO">
+            <div class="news-date">15 Nov 2024</div>
+            <div class="news-category">UNESCO</div>
+          </div>
+          <div class="news-content">
+            <h3>Le Xeer Ciise candidat au Patrimoine Culturel Immatériel</h3>
+            <p>Une étape majeure dans la reconnaissance internationale du système juridique traditionnel somali-issa. Le dossier met en avant l'importance de ce patrimoine oral millénaire.</p>
+            <div class="news-meta">
+              <div class="news-author">
+                <i class="fas fa-user"></i>
+                <span>Équipe UNESCO</span>
+              </div>
+              <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="news-image">
+            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%238B4513' width='400' height='250'/><text x='200' y='125' text-anchor='middle' fill='white' font-size='16'>Conference</text></svg>" alt="Conference">
+            <div class="news-date">28 Oct 2024</div>
+            <div class="news-category">Conférence</div>
+          </div>
+          <div class="news-content">
+            <h3>Conférence Internationale sur les Systèmes Juridiques</h3>
+            <p>Participation remarquée des experts du Xeer Ciise à la conférence de Paris sur la préservation des droits coutumiers africains.</p>
+            <div class="news-meta">
+              <div class="news-author">
+                <i class="fas fa-user"></i>
+                <span>Dr. Ahmed Hassan</span>
+              </div>
+              <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="news-image">
+            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%23CD853F' width='400' height='250'/><text x='200' y='125' text-anchor='middle' fill='white' font-size='16'>Digital Archive</text></svg>" alt="Archive">
+            <div class="news-date">12 Oct 2024</div>
+            <div class="news-category">Numérique</div>
+          </div>
+          <div class="news-content">
+            <h3>Lancement de l'Archive Numérique du Xeer Ciise</h3>
+            <p>Une plateforme innovante pour préserver et rendre accessible le patrimoine juridique oral. Plus de 500 témoignages déjà numérisés.</p>
+            <div class="news-meta">
+              <div class="news-author">
+                <i class="fas fa-user"></i>
+                <span>Équipe Technique</span>
+              </div>
+              <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Events Section -->
+    <section class="events-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Événements Culturels et Conférences</h2>
+          <p>Participez aux événements dédiés à la promotion du Xeer Ciise</p>
+        </div>
+
+        <div class="events-grid">
+          <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="event-icon">
+              <i class="fas fa-microphone"></i>
+            </div>
+            <h4>Symposium International</h4>
+            <div class="event-date">5-7 Décembre 2024</div>
+            <p>Symposium sur "Les Systèmes Juridiques Traditionnels dans le Monde Moderne" à Djibouti.</p>
+          </div>
+
+          <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="event-icon">
+              <i class="fas fa-book-reader"></i>
+            </div>
+            <h4>Atelier de Formation</h4>
+            <div class="event-date">20-22 Janvier 2025</div>
+            <p>Formation des jeunes chercheurs aux méthodes de collecte des traditions orales.</p>
+          </div>
+
+          <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="event-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Rencontre Communautaire</h4>
+            <div class="event-date">15 Février 2025</div>
+            <p>Grande rencontre des communautés somali-issa pour célébrer le Xeer Ciise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Publications Récentes et Recherches</h2>
+          <p>Découvrez les dernières publications académiques et recherches sur le Xeer Ciise</p>
+        </div>
+
+        <div class="publications-grid">
+          <div class="publication-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="publication-type">Article Académique</div>
+            <h4>Le Xeer Ciise : Un Système de Justice Restaurative</h4>
+            <div class="publication-authors">Dr. Fatouma Ali, Prof. Hassan Mohamed</div>
+            <p>Analyse comparative du système de justice restaurative du Xeer Ciise avec les approches modernes de résolution des conflits.</p>
+            <a href="#" class="publication-link">
+              Télécharger PDF <i class="fas fa-download"></i>
+            </a>
+          </div>
+
+          <div class="publication-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="publication-type">Livre</div>
+            <h4>Traditions Orales et Droit Coutumier Somali</h4>
+            <div class="publication-authors">Collectif d'Auteurs</div>
+            <p>Ouvrage collectif sur les traditions juridiques orales des communautés somali-issa, publié aux Éditions Universitaires.</p>
+            <a href="#" class="publication-link">
+              Commander <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+
+          <div class="publication-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="publication-type">Rapport de Recherche</div>
+            <h4>Impact du Xeer Ciise sur la Cohésion Sociale</h4>
+            <div class="publication-authors">Institut de Recherche Culturelle</div>
+            <p>Étude sur l'impact du système juridique traditionnel sur le maintien de la cohésion sociale dans les communautés contemporaines.</p>
+            <a href="#" class="publication-link">
+              Consulter <i class="fas fa-eye"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope me-2"></i> contact@xeerciise.org</p>
+          <p><i class="fas fa-phone me-2"></i> +253 XX XX XX XX</p>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Djibouti, République de Djibouti</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <p><a href="index.html">Accueil</a></p>
+          <p><a href="about.html">À Propos</a></p>
+          <p><a href="traditions.html">Traditions</a></p>
+          <p><a href="news.html">Actualités</a></p>
+          <p><a href="galerie.html">Galerie</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Régions</h3>
+          <p><a href="#">Djibouti</a></p>
+          <p><a href="#">Éthiopie</a></p>
+          <p><a href="#">Somalie</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Partenaires</h3>
+          <p><a href="#">UNESCO</a></p>
+          <p><a href="#">Universités Locales</a></p>
+          <p><a href="#">Organisations Culturelles</a></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Xeer Ciise. Tous droits réservés. | Préservation du patrimoine culturel somali-issa</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 100) {
+        header.style.boxShadow = '0 4px 30px rgba(139, 69, 19, 0.4)';
+      } else {
+        header.style.boxShadow = '0 4px 20px rgba(139, 69, 19, 0.3)';
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Traditions - Xeer Ciise | Pratiques et Principes du Droit Coutumier Somali-Issa</title>
+  <meta name="description" content="Découvrez les traditions, pratiques et principes fondamentaux du Xeer Ciise, système juridique traditionnel des communautés somali-issa">
+  <meta name="keywords" content="traditions xeer ciise, droit coutumier, pratiques juridiques, principes traditionnels, culture somali-issa">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #8B4513;
+      --secondary-color: #D2691E;
+      --accent-color: #CD853F;
+      --gold-color: #DAA520;
+      --text-dark: #2C1810;
+      --text-light: #6B4423;
+      --bg-light: #FDF6E3;
+      --bg-cream: #FAF0E6;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+    }
+
+    /* Header Styles */
+    .header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      padding: 0;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(139, 69, 19, 0.3);
+    }
+
+    .header-top {
+      background: rgba(44, 24, 16, 0.9);
+      padding: 8px 0;
+      font-size: 0.85rem;
+      color: var(--white);
+    }
+
+    .header-main {
+      padding: 15px 0;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--gold-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+    }
+
+    .logo-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .logo-text .tagline {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 300;
+      margin-top: -5px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-menu a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: var(--gold-color);
+      text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+    }
+
+    .nav-menu a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gold-color);
+      box-shadow: 0 0 10px rgba(218, 165, 32, 0.7);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(210, 105, 30, 0.8)), 
+                  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23D2691E" width="1200" height="600"/><path fill="%238B4513" d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero-content .subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .breadcrumb-custom {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .breadcrumb-custom a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--gold-color);
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Principles Grid */
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .principle-card {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .principle-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--gold-color));
+    }
+
+    .principle-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(139, 69, 19, 0.2);
+    }
+
+    .principle-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    .principle-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .principle-card p {
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .principle-details {
+      background: var(--bg-light);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .principle-details h4 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .principle-details ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .principle-details li {
+      padding: 5px 0;
+      color: var(--text-light);
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .principle-details li::before {
+      content: '•';
+      color: var(--gold-color);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* Practices Section */
+    .practices-section {
+      padding: 80px 0;
+      background: var(--bg-cream);
+    }
+
+    .practices-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .practice-card {
+      background: var(--white);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(139, 69, 19, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .practice-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(139, 69, 19, 0.2);
+    }
+
+    .practice-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--white);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .practice-header i {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .practice-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .practice-content {
+      padding: 30px;
+    }
+
+    .practice-content p {
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .practice-examples {
+      background: var(--bg-light);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .practice-examples h4 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    /* Values Section */
+    .values-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .values-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .value-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      padding: 30px;
+      background: var(--bg-light);
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .value-item:hover {
+      transform: translateX(10px);
+      box-shadow: 0 10px 25px rgba(139, 69, 19, 0.15);
+    }
+
+    .value-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .value-item:nth-child(even):hover {
+      transform: translateX(-10px);
+    }
+
+    .value-icon {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, var(--primary-color), var(--gold-color));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: var(--white);
+      margin: 0 30px;
+      flex-shrink: 0;
+    }
+
+    .value-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .value-content p {
+      color: var(--text-light);
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--text-dark);
+      color: var(--white);
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold-color);
+      margin-bottom: 20px;
+    }
+
+    .footer-section a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: var(--gold-color);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-main {
+        text-align: center;
+      }
+      
+      .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .principles-grid,
+      .practices-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .value-item,
+      .value-item:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .value-icon {
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <i class="fas fa-envelope me-2"></i> contact@xeerciise.org
+          </div>
+          <div class="col-md-6 text-end">
+            <i class="fas fa-phone me-2"></i> +253 XX XX XX XX
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-main">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="logo-section">
+              <div class="logo-icon">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div class="logo-text">
+                <h1>XEER CIISE</h1>
+                <div class="tagline">Patrimoine Juridique Somali-Issa</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="nav-menu justify-content-end">
+              <a href="index.html">Accueil</a>
+              <a href="about.html">À Propos</a>
+              <a href="traditions.html" class="active">Traditions</a>
+              <a href="galerie.html">Galerie</a>
+              <a href="news.html">Actualités</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Traditions du Xeer Ciise</h1>
+        <p class="subtitle">Découvrez les pratiques ancestrales et les principes fondamentaux du système juridique traditionnel somali-issa</p>
+        <div class="breadcrumb-custom">
+          <a href="index.html">Accueil</a> / <span>Traditions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Principles Section -->
+      <section class="section-header" data-aos="fade-up">
+        <h2>Principes Fondamentaux</h2>
+        <p>Les piliers essentiels qui guident le système juridique traditionnel du Xeer Ciise</p>
+      </section>
+
+      <div class="principles-grid">
+        <div class="principle-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="principle-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3>Équité et Justice</h3>
+          <p>Le Xeer Ciise prône l'équité absolue dans le traitement des conflits, garantissant que chaque partie soit entendue et que les décisions soient prises dans l'intérêt collectif.</p>
+          <div class="principle-details">
+            <h4>Applications pratiques :</h4>
+            <ul>
+              <li>Égalité devant la loi coutumière</li>
+              <li>Droit à la parole pour tous</li>
+              <li>Décisions basées sur les preuves</li>
+              <li>Compensation équitable</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="principle-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="principle-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Réconciliation</h3>
+          <p>L'objectif premier n'est pas la punition mais la restauration de l'harmonie sociale et la réconciliation entre les parties en conflit.</p>
+          <div class="principle-details">
+            <h4>Méthodes de réconciliation :</h4>
+            <ul>
+              <li>Médiation par les anciens</li>
+              <li>Cérémonies de pardon</li>
+              <li>Réparation symbolique</li>
+              <li>Réintégration communautaire</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="principle-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="principle-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Consensus Communautaire</h3>
+          <p>Les décisions importantes sont prises collectivement, impliquant toute la communauté dans le processus de résolution des conflits.</p>
+          <div class="principle-details">
+            <h4>Processus de consensus :</h4>
+            <ul>
+              <li>Assemblées communautaires</li>
+              <li>Consultation des sages</li>
+              <li>Débats ouverts et transparents</li>
+              <li>Accord unanime recherché</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practices Section -->
+    <section class="practices-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Pratiques Traditionnelles</h2>
+          <p>Les rituels et procédures qui structurent l'application du Xeer Ciise</p>
+        </div>
+
+        <div class="practices-grid">
+          <div class="practice-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="practice-header">
+              <i class="fas fa-gavel"></i>
+              <h3>Assemblée des Anciens</h3>
+              <p>Guurti</p>
+            </div>
+            <div class="practice-content">
+              <p>L'assemblée des anciens (Guurti) constitue l'institution centrale du Xeer Ciise. Ces sages respectés dirigent les délibérations et garantissent l'application correcte des traditions.</p>
+              <div class="practice-examples">
+                <h4>Rôles et responsabilités :</h4>
+                <p>• Médiation des conflits majeurs<br>
+                • Interprétation des lois coutumières<br>
+                • Transmission du savoir juridique<br>
+                • Maintien de l'ordre social</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="practice-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="practice-header">
+              <i class="fas fa-comments"></i>
+              <h3>Palabre Communautaire</h3>
+              <p>Shir</p>
+            </div>
+            <div class="practice-content">
+              <p>Le Shir est une assemblée démocratique où tous les membres de la communauté peuvent s'exprimer librement sur les questions qui les concernent.</p>
+              <div class="practice-examples">
+                <h4>Caractéristiques du Shir :</h4>
+                <p>• Participation ouverte à tous<br>
+                • Expression libre des opinions<br>
+                • Recherche du consensus<br>
+                • Décisions collectives</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="practice-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="practice-header">
+              <i class="fas fa-heart"></i>
+              <h3>Cérémonie de Réconciliation</h3>
+              <p>Diyad</p>
+            </div>
+            <div class="practice-content">
+              <p>La Diyad est une cérémonie sacrée qui scelle la réconciliation entre les parties en conflit et restaure l'harmonie communautaire.</p>
+              <div class="practice-examples">
+                <h4>Éléments de la Diyad :</h4>
+                <p>• Reconnaissance mutuelle des torts<br>
+                • Échange de pardon<br>
+                • Compensation symbolique<br>
+                • Bénédiction des anciens</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Valeurs Fondamentales</h2>
+          <p>Les valeurs morales et éthiques qui sous-tendent le système du Xeer Ciise</p>
+        </div>
+
+        <div class="values-container">
+          <div class="value-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="value-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="value-content">
+              <h3>Honneur et Dignité</h3>
+              <p>Le respect de l'honneur personnel et familial est central dans le Xeer Ciise. Chaque individu doit préserver sa dignité et celle de sa communauté à travers ses actions et ses paroles.</p>
+            </div>
+          </div>
+
+          <div class="value-item" data-aos="fade-left" data-aos-delay="200">
+            <div class="value-icon">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <div class="value-content">
+              <h3>Solidarité Communautaire</h3>
+              <p>L'entraide mutuelle et la solidarité entre les membres de la communauté constituent les fondements de la cohésion sociale dans le système traditionnel.</p>
+            </div>
+          </div>
+
+          <div class="value-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="value-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="value-content">
+              <h3>Respect de la Nature</h3>
+              <p>Le Xeer Ciise intègre une dimension écologique forte, prônant la gestion durable des ressources naturelles et le respect de l'environnement.</p>
+            </div>
+          </div>
+
+          <div class="value-item" data-aos="fade-left" data-aos-delay="400">
+            <div class="value-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <div class="value-content">
+              <h3>Transmission du Savoir</h3>
+              <p>La préservation et la transmission des connaissances traditionnelles aux jeunes générations est considérée comme un devoir sacré.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope me-2"></i> contact@xeerciise.org</p>
+          <p><i class="fas fa-phone me-2"></i> +253 XX XX XX XX</p>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Djibouti, République de Djibouti</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <p><a href="index.html">Accueil</a></p>
+          <p><a href="about.html">À Propos</a></p>
+          <p><a href="traditions.html">Traditions</a></p>
+          <p><a href="galerie.html">Galerie</a></p>
+          <p><a href="news.html">Actualités</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Régions</h3>
+          <p><a href="#">Djibouti</a></p>
+          <p><a href="#">Éthiopie</a></p>
+          <p><a href="#">Somalie</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Partenaires</h3>
+          <p><a href="#">UNESCO</a></p>
+          <p><a href="#">Universités Locales</a></p>
+          <p><a href="#">Organisations Culturelles</a></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Xeer Ciise. Tous droits réservés. | Préservation du patrimoine culturel somali-issa</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 100) {
+        header.style.boxShadow = '0 4px 30px rgba(139, 69, 19, 0.4)';
+      } else {
+        header.style.boxShadow = '0 4px 20px rgba(139, 69, 19, 0.3)';
+      }
+    });
+  </script>
+</body>
+
+</html>
